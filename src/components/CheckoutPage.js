@@ -20,7 +20,7 @@ const useStyles = makeStyles((theme) => ({
 const CheckoutPage = () => {
   const classes = useStyles();
   const [{ basket }, dispatch] = useStateValue();
-
+console.log(dispatch);
   function FormRow() {
     return (
       <React.Fragment>

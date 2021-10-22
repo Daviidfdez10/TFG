@@ -1,8 +1,7 @@
 import './App.css';
-import CheckoutCard from './components/CheckoutCard';
 import CheckoutPage from './components/CheckoutPage';
 import Navbar from './components/Navbar';
-import Product from './components/Product';
+
 import Signin from './components/Signin';
 import Products from './components/Products';
 import {Switch,BrowserRouter as Router,Route} from "react-router-dom";
@@ -13,25 +12,34 @@ import { actionTypes } from './reducer';
 import { useStateValue } from "./StateProvider";
 import Checkout from './components/CheckoutForm/Checkout';
 import Footer from './footer';
-import Clientes from './components/clientes';
+
 
 
 
 
 function App() {
+  
   const [{ user }, dispatch] = useStateValue();
-useEffect(()=>{
+  useEffect(()=>{
   auth.onAuthStateChanged((authUser)=>{
     console.log(authUser);
+  
     if(authUser){
       dispatch({
           type:actionTypes.SET_USER,
           user:authUser,
-      })
-    }
-  })
-},[])
+      });
+     } else {
+        dispatch({
+        type:actionTypes.SET_USER,
+        user:null,
+        });
 
+      
+    }
+  });
+  console.log(user);
+}, []);
 return (
   <Router>
     <div className='app'>

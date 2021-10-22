@@ -8,6 +8,7 @@ import accounting from "accounting";
 const Review = () =>{
   const [{ basket }, dispatch] = useStateValue();
 
+  console.log(dispatch);
   return (
     <>
       <Typography variant='h6' gutterBottom>

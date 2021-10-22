@@ -1,5 +1,4 @@
 import {
-  Paper,
   Stepper,
   Step,
   StepLabel,
@@ -34,6 +33,7 @@ const Checkout = () => {
     ) : (
       <PaymentForm backStep={backStep} nextStep={nextStep} />
     );
+    console.log(dispatch);
   return (
     <>
       <CssBaseline />

@@ -1,10 +1,7 @@
 import React from "react";
-import { useState } from "react";
-import clsx from "clsx";
 import Card from "@material-ui/core/Card";
 import CardHeader from "@material-ui/core/CardHeader";
 import CardMedia from "@material-ui/core/CardMedia";
-import CardContent from "@material-ui/core/CardContent";
 import CardActions from "@material-ui/core/CardActions";
 import IconButton from "@material-ui/core/IconButton";
 import Typography from "@material-ui/core/Typography";
@@ -43,12 +40,10 @@ textAlign: "center",
 
 export default function CheckoutCard({product : {id , name, productType, image, price, rating, description}}) {
   const classes= useStyles();
-  const [expanded, setExpanded] = React.useState(false);
   const [{ basket }, dispatch] = useStateValue();
 
-  const handleExpandClick = () => {
-    setExpanded(!expanded);
-  };
+ console.log(basket);
+
 
   const removeItem = () => dispatch(
     {

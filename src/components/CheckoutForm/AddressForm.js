@@ -1,14 +1,14 @@
 import { Button,Grid, Typography } from "@material-ui/core";
 import { useForm, FormProvider } from "react-hook-form";
 import AddressInput from "./AddressInput";
-import React, { useState } from "react";
+import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
 
 import { Link } from "react-router-dom";
 import { useStateValue } from "../../StateProvider";
 
 import { actionTypes } from "../../reducer";
-import { ClassNames } from "@emotion/react";
+
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -26,6 +26,7 @@ const AddressForm = ({ nextStep }) => {
     const emailRegex = RegExp(
       /^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/
     );
+    console.log(shippingData);
     return (
         <div className={classes}>
             <Typography variant='h5' gutterBottom>

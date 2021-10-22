@@ -3,12 +3,10 @@ import AppBar from "@material-ui/core/AppBar";
 import Toolbar from "@material-ui/core/Toolbar";
 import Typography from "@material-ui/core/Typography";
 import IconButton from "@material-ui/core/IconButton";
-import logo from "../assets/de.png";
-import { Badge, Button, CssBaseline } from "@material-ui/core";
+import { Badge, Button } from "@material-ui/core";
 import { ShoppingCart } from "@material-ui/icons";
 import de from '../assets/de.png'
 import React from "react";
-import { width } from "@mui/system";
 import { useStateValue } from "../StateProvider";
 import { useHistory } from "react-router-dom";
 import { Link } from "react-router-dom";
@@ -65,8 +63,8 @@ export default function Navbar() {
           <Link to="/">
           <IconButton edge="start" className={classes.menuButton} color="inherit" aria-label="menu">
                 <img
+                  alt="description"
                   src={de}
-                
                   className={classes.image}
                 />
               </IconButton>
@@ -75,11 +73,8 @@ export default function Navbar() {
               <div className={classes.grow}/>
             
               
-              <Link to="/clientes">
-           {/*    <Typography variant="h6" color="textPrimary" component="p">
-                Clientes 
-              </Typography> */}
-                </Link>
+          
+            
               <Typography variant="h6" color="textPrimary" component="p">
                 Bienvenido {user ? user.email : "Anónimo"}
               </Typography>

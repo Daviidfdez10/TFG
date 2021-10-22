@@ -1,10 +1,9 @@
 import { makeStyles } from "@material-ui/core/styles";
-import { Grid, CssBaseline } from "@material-ui/core";
+import { Grid } from "@material-ui/core";
 import React from "react";
 import Product from "./Product";
 import products from "../product-data";
-import tenis from '../assets/tenis.jpg';
-import {Image} from "react";
+
 const useStyles = makeStyles((theme) => ({
     root: {
       flexGrow: 1,

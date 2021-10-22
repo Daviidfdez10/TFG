@@ -3,7 +3,6 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 const  generateRandomString = (num) => {
-  const characters ='ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
   let result1= Math.random().toString(36).substring(num);       
 
   return result1;

@@ -10,7 +10,7 @@ import IconButton from "@material-ui/core/IconButton";
 import Typography from "@material-ui/core/Typography";
 import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
 import { makeStyles } from "@material-ui/core/styles";
-import { AddShoppingCart, AssessmentTwoTone } from "@material-ui/icons";
+import { AddShoppingCart } from "@material-ui/icons";
 import { useStateValue } from "../StateProvider";
 import { actionTypes } from "../reducer";
 import accounting from "accounting";
@@ -27,8 +27,8 @@ const useStyles = makeStyles((theme) => ({
     
   },
   media: {
-    width: 320,
-    height: 320,
+    maxWidth:"100%",
+    justifyContent:"center",
     
     paddingTop: "56.25%", // 16:9
   },
@@ -55,7 +55,7 @@ export default function Product({
   const handleExpandClick = () => {
     setExpanded(!expanded);
   };
-
+console.log(basket);
   const anadir = () => {
     dispatch({
       type: actionTypes.ADD_TO_BASKET,

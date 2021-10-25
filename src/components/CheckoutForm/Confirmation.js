@@ -12,6 +12,7 @@ const  generateRandomString = (num) => {
 
 const Confirmation = ({ message }) => {
     console.log(message);
+    message="Pagado correctamente";
   return (
     <>
       <div>
@@ -20,9 +21,9 @@ const Confirmation = ({ message }) => {
         <Divider />
         <br />
         <Typography variant='subtitle2' gutterBottom>
-          {message === "Pagado correctamente"
-            ? "Direccion de envio :"+ generateRandomString(1)
-            : ""}
+          { message+
+             "Direccion de envio :"+ generateRandomString(1)+
+             ""}
         </Typography>
       </div>
       <br />

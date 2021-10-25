@@ -3,8 +3,9 @@ import styled from 'styled-components';
 export const Box = styled.div`
 padding: 80px 0px;
 background: lightblue;
-bottom: 0;
-position: relative;
+bottom:0;
+ 
+
 
 @media (max-width: 1000px) {
 	padding: 70px 30px;
@@ -25,10 +26,11 @@ export const Column = styled.div`
 display: flex;
 flex-direction: column;
 text-align: left;
-margin-left: 20px;
+margin-left: 10px;
 `;
 
 export const Row = styled.div`
+
 display: grid;
 grid-template-columns: repeat(auto-fill,
 						minmax(155px, 1fr));

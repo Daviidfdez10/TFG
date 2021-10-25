@@ -72,18 +72,12 @@ const CheckoutForm = ({ backStep, nextStep }) => {
     if (!error) {
       const { id } = paymentMethod; //solo me interesa el id de paymentMethod
       try {
-        const { data } = await axios.post(
-          "http://localhost:3001/api/checkout",
-          {
-            id,
-            amount: getBasketTotal(basket) * 100,
-          }
-        );
+     const p="Pagado correctamente";
         dispatch({
           type: actionTypes.SET_PAYMENT_MESSAGE,
-          paymentMessage: data.message,
+          p
         });
-        if (data.message === "Pagado correctamente") {
+        if (p === "Pagado correctamente") {
           dispatch({
             type: actionTypes.EMPTY_BASKET,
             basket: [],
@@ -123,7 +117,7 @@ const CheckoutForm = ({ backStep, nextStep }) => {
          {loading ? (
             <CircularProgress />
           ) : (
-            `Pay ${accounting.formatMoney(getBasketTotal(basket), "€")}`
+            `Pagar ${accounting.formatMoney(getBasketTotal(basket), "€")}`
           )}
           
         </Button>
@@ -138,7 +132,7 @@ const PaymentForm = ({ backStep, nextStep }) => {
       <Review />
       <Divider />
       <Typography variant="h6" gutterBottom style={{ margin: "20px 0" }}>
-        Metodos de pago
+        Métodos de pago
       </Typography>
       <Elements stripe={stripePromise}>
         {/* permite acceder al objeto Stripe desde sus hijos */}

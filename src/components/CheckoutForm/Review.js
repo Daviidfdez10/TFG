@@ -27,7 +27,7 @@ const Review = () =>{
         ))}
         <ListItem style={{ padding: "10px 0" }}>
           <ListItemText primary='Total' />
-          <Typography variant='subtitle1' style={{ fontWeight: 700 }}>
+          <Typography variant='subtitle1' style={{ fontWeight: 800 }}>
             {accounting.formatMoney(getBasketTotal(basket), "€")}
           </Typography>
         </ListItem>

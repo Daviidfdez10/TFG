@@ -1,7 +1,7 @@
-const express = require("express");
-const Stripe = require("stripe");
+import { json } from "express";
+import Stripe from "stripe";
 const stripe = new Stripe("sk_test_51JltQrBBXV6mtNTgMqty15e2yLQoaYqMg8z547x8VoKe12kBQcYhx9vGXZG4cM8tuY3klqvxD71LAGc4y5rnS6HW00kEnVT3FY");
-const cors = require("cors");
+import cors from "cors";
 
 
 const app = express();
@@ -9,7 +9,7 @@ const app = express();
 //middleware
 
 app.use(cors({ origin: "http://localhost:3000" }));
-app.use(express.json());
+app.use(json());
 
 
 //lo que llega procedente del frontend.

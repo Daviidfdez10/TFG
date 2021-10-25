@@ -8,7 +8,7 @@ const app = express();
 
 //middleware
 
-app.use(cors({ origin: "http://localhost:3000" }));
+app.use(cors({ origin: "https://github.com/Daviidfdez10/Respuesta.git" }));
 app.use(express.json());
 
 

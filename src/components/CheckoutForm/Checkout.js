@@ -15,13 +15,21 @@ import AddressForm from "./AddressForm";
 import PaymentForm from "./PaymentForm";
 import Confirmation from "./Confirmation";
 
+
+
 const steps = ["Direccion de envio", "Detalles de pago"];
 
 
+/* const useStyles = makeStyles((theme) => ({
+  layout{
+    
+  }
+
+})); */
 
 const Checkout = () => {
   const classes= useStyles();
-  const [activeStep, setActivestep] = useState(0);
+    const [activeStep, setActivestep] = useState(0);
   const [{ paymentMessage }, dispatch] = useStateValue();
 
   const nextStep = () => setActivestep((prevActivestep) => prevActivestep + 1);

@@ -11,7 +11,11 @@ import { actionTypes } from "../../reducer";
 
 
 const useStyles = makeStyles((theme) => ({
-  root: {
+  letra: {
+
+      textAlign:"center",
+  
+      /* backgroundColor:"#FFF5EE", */
     
      
     /* backgroundColor:"#FFF5EE", */
@@ -29,7 +33,7 @@ const AddressForm = ({ nextStep }) => {
     console.log(shippingData);
     return (
         <div className={classes}>
-            <Typography variant='h5' gutterBottom>
+            <Typography variant='h5' gutterBottom className={classes.letra}>
 
                 Direccion de envio
             </Typography>

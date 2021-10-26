@@ -19,6 +19,8 @@ import { auth } from "../firebase";
 const useStyles = makeStyles((theme) => ({
   root:{
       height:"61.9vh",
+      backgroundColor:"white",
+    borderRadius:"1 px solid black",
   },
   paper: {
     marginTop: theme.spacing(8),
@@ -28,7 +30,7 @@ const useStyles = makeStyles((theme) => ({
   },
   avatar: {
     margin: theme.spacing(1),
-    backgroundColor: theme.palette.primary.main,
+    backgroundColor: theme.palette.secondary.main,
   },
   form: {
     width: "100%",
@@ -122,8 +124,9 @@ export default function SignUp() {
             </Grid>
             <Grid item xs={12}>
               <FormControlLabel
-                control={<Checkbox value='allowExtraEmails' color='primary' />}
+                control={<Checkbox value='allowExtraEmails' color='secondary' />}
                 label='Estoy de acuerdo con los derechos de contenido.'
+                required
               />
             </Grid>
           </Grid>
@@ -131,7 +134,7 @@ export default function SignUp() {
             type='submit'
             fullWidth
             variant='contained'
-            color='primary'
+            color='secondary'
             className={classes.submit}
             onClick={signup}
           >

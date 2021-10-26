@@ -20,6 +20,8 @@ import { auth } from "../firebase";
 const useStyles = makeStyles((theme) => ({
   root:{
     height:"61.9vh",
+    backgroundColor:"white",
+    borderRadius:"1 px solid black",
   },
   paper: {
     marginTop: theme.spacing(8),
@@ -32,7 +34,7 @@ const useStyles = makeStyles((theme) => ({
   },
   avatar: {
     margin: theme.spacing(1),
-    backgroundColor: theme.palette.primary.main,
+    backgroundColor: theme.palette.secondary.main,
   },
   form: {
     width: "100%", // Fix IE 11 issue.
@@ -62,7 +64,7 @@ export default function SignIn() {
   };
 
   return (
-    <Container component='main' maxWidth='xs' color="red" className={classes.root}>
+    <Container component='main' maxWidth='xs' color="secondary" className={classes.root}>
       <CssBaseline />
       <div className={classes.paper}>
         <Avatar className={classes.avatar}>
@@ -99,7 +101,7 @@ export default function SignIn() {
             autoComplete='current-password'
           />
           <FormControlLabel
-            control={<Checkbox value='remember' color='primary' />}
+            control={<Checkbox value='remember' color='secondary' />}
             label='Recordarme'
           />
           <Button
@@ -107,7 +109,7 @@ export default function SignIn() {
             type='submit'
             fullWidth
             variant='contained'
-            color='primary'
+            color='secondary'
             className={classes.submit}
           >
             Iniciar sesion

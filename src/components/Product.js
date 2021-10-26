@@ -27,7 +27,8 @@ const useStyles = makeStyles((theme) => ({
     
   },
   media: {
-    maxWidth:"100%",
+     maxWidth:"100%", 
+     
     justifyContent:"center",
     
     paddingTop: "56.25%", // 16:9
@@ -39,6 +40,7 @@ const useStyles = makeStyles((theme) => ({
       duration: theme.transitions.duration.shortest,
     }),
   },
+  
   expandOpen: {
     transform: "rotate(90deg)",
   },
@@ -93,6 +95,7 @@ console.log(basket);
       />
       <CardMedia className={classes.media} 
       
+
       image={image}
       
       title={name} />

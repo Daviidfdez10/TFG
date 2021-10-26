@@ -18,10 +18,16 @@ const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
     marginBottom: "7rem",
+
   },
   appBar: {
-    backgroundColor: "lightblue",
+    backgroundColor: "black",
+    color:"white",
     boxShadow: "none",
+
+  },
+  menuButton: {
+   /*  color:"white", */
   },
   grow: {
     flexGrow: 1,
@@ -58,6 +64,7 @@ export default function Navbar() {
 
   return (
     <div className={classes.root}>
+
     <AppBar position='fixed' className={classes.appBar}>
       <Toolbar>
           <Link to="/">
@@ -75,12 +82,12 @@ export default function Navbar() {
               
           
             
-              <Typography variant="h6" color="textPrimary" component="p">
+              <Typography variant="h6" color="textWhite" component="p">
                 Bienvenido {user ? user.email : "Anónimo"}
               </Typography>
               <div className={classes.button}>
                 <Link to="/signin">
-                <Button variant="outlined" onClick={handleAuth}>
+                <Button variant="outlined" onClick={handleAuth} color="secondary">
                 <strong>{user ? "Cerrar sesion": "Iniciar sesion"}</strong>
                 </Button>
                    </Link>
@@ -88,7 +95,7 @@ export default function Navbar() {
                 <Link to="checkout-page">
                   <IconButton aria-label="show cart items" color="inherit">
                   <Badge badgeContent={basket?.length} color="secondary">
-                  <ShoppingCart fontSize="large" color="primary"/>
+                  <ShoppingCart fontSize="large" color="secondary"/>
                   </Badge>
                 
                 </IconButton>
@@ -99,6 +106,7 @@ export default function Navbar() {
               </div>
         </Toolbar>      
       </AppBar>
+      
     </div>
   );
 };

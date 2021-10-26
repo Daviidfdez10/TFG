@@ -3,20 +3,28 @@ import React from "react";
 import { useStateValue } from "../../StateProvider";
 import { getBasketTotal } from "../../reducer";
 import accounting from "accounting";
+import { makeStyles } from "@material-ui/core/styles";
 
+const useStyles = makeStyles((theme) => ({
+  letra: {
+    textAlign:"center",
 
+    /* backgroundColor:"#FFF5EE", */
+  },
+ 
+}));
 const Review = () =>{
   const [{ basket }, dispatch] = useStateValue();
-
+  const classes= useStyles();
   console.log(dispatch);
   return (
     <>
-      <Typography variant='h6' gutterBottom>
+      <Typography variant='h6' gutterBottom className={classes.letra}>
 
         Resumen del pedido
       </Typography>
 
-      <List disablePadding>
+      <List disablePadding className={classes.texto}>
       {basket?.map((product) => (
           <ListItem style={{ padding: "10px 0" }} key={product.name}>
             <ListItemText primary={product.name} secondary={`Cantidad: ${1}`} />

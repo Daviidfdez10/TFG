@@ -131,6 +131,17 @@ const products = [
       description:
         "La sudadera Club Fynn es una cómoda chaqueta con capucha, ideal para disfrutar en las pistas o para ir a donde surja.",
     },
+    {
+      id: 13,
+      name: "Delta hybrid",
+      productType: "Palas",
+      price: 278,
+      rating: 5,
+      image:
+      "https://cdn-mdb.head.com/CDN3/D/228100/1/1200x1200/graphene-360-delta-hybrid-with-cb.jpg",
+      description:
+        "Mejor jugabilidad, mayor punto dulce y más potencia aún en la nueva pala Delta Hybrid para salir de la pista triunfante",
+    },
   ];
   
   export default products;

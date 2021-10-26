@@ -6,6 +6,8 @@ export default makeStyles((theme) => ({
   },
   layout: {
     width: "auto",
+    backgroundColor:"white",
+    border:" 2px solid black",
     marginLeft: theme.spacing(2),
     marginRight: theme.spacing(2),
     [theme.breakpoints.up(600 + theme.spacing(2) * 2)]: {

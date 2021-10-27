@@ -8,10 +8,11 @@ import { useStateValue } from "../StateProvider";
 
 const useStyles = makeStyles((theme) => ({
   root: {
-    flexGrow: 1,
+    display:"flex",
+    flexDirection:"column",
     padding: "2rem",
     marginTop:"-25px",
-    backgroundImage:'',
+    
 
     /* backgroundColor:"#FFF5EE", */
   },

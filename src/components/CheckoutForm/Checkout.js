@@ -20,13 +20,13 @@ import Confirmation from "./Confirmation";
 const steps = ["Direccion de envio", "Detalles de pago"];
 
 
-/* const useStyles = makeStyles((theme) => ({
-  layout{
+/*  const useStyles = makeStyles((theme) => ({
+  layout:{
     
   }
 
-})); */
-
+})); 
+ */
 const Checkout = () => {
   const classes= useStyles();
     const [activeStep, setActivestep] = useState(0);
@@ -45,7 +45,7 @@ const Checkout = () => {
   return (
     <>
       <CssBaseline />
-      <main className={classes.layout}>
+      <div className={classes.layout}  style={{marginTop:"220px" }}>
        
           <Typography component='h1' variant='h4' align='center'>
             Checkout
@@ -62,7 +62,7 @@ const Checkout = () => {
           }
      
       
-      </main>
+      </div>
     </>
   );
 };

@@ -32,7 +32,7 @@ const AddressForm = ({ nextStep }) => {
     );
     console.log(shippingData);
     return (
-        <div className={classes}>
+        <div className={classes.root}>
             <Typography variant='h5' gutterBottom className={classes.letra}>
 
                 Direccion de envio

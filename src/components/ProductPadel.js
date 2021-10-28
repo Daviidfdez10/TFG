@@ -8,7 +8,11 @@ const useStyles = makeStyles((theme) => ({
     root: {
       flexGrow: 1,
       padding:theme.spacing(3),
-      
+      paddingTop:"200px",
+      [theme.breakpoints.up('sm')]: {
+        paddingTop:"10px"
+        
+      },
     },
    
   }));
@@ -24,7 +28,9 @@ const useStyles = makeStyles((theme) => ({
              style={{ color: "black",
              textAlign: "center",
              fontSize:50,
-             marginTop: "-20px" }}
+             marginTop: "-20px"
+            
+            }}
             
              
             >Padel </h1>

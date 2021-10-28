@@ -12,6 +12,12 @@ const useStyles = makeStyles((theme) => ({
     flexDirection:"column",
     padding: "2rem",
     marginTop:"-25px",
+    paddingTop:"200px",
+    justifyItems:"center",
+      [theme.breakpoints.up('sm')]: {
+        paddingTop:"10px"
+        
+      },
     
 
     /* backgroundColor:"#FFF5EE", */

@@ -13,7 +13,11 @@ const useStyles = makeStyles((theme) => ({
     root: {
       flexGrow: 1,
       padding:theme.spacing(3),
-      flexDirection:"row"
+      paddingTop:"200px",
+      [theme.breakpoints.up('sm')]: {
+        paddingTop:"10px"
+        
+      },
     },
     orden : {
     

@@ -21,6 +21,11 @@ const useStyles = makeStyles((theme) => ({
       height:"61.9vh",
       backgroundColor:"white",
     borderRadius:"1 px solid black",
+    paddingTop:"60px",
+    [theme.breakpoints.up('sm')]: {
+      paddingTop:"0px"
+      
+    },
   },
   paper: {
     marginTop: theme.spacing(8),

@@ -15,7 +15,12 @@ import DeleteIcon from '@material-ui/icons/Delete'
 const useStyles = makeStyles((theme) => ({
   root: {
     maxWidth: 345,
-  
+    paddingTop:"200px",
+    justifyItems:"center",
+      [theme.breakpoints.up('sm')]: {
+        paddingTop:"10px"
+        
+      },
   },
   action: {
     marginTop: "1rem",

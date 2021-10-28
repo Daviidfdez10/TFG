@@ -16,21 +16,34 @@ import { actionTypes } from "../reducer";
 
 const useStyles = makeStyles((theme) => ({
   root: {
-    flexGrow: 1,
+    textAlign:"center",
     marginBottom: "7rem",
-
+    [theme.breakpoints.up('sm')]: {
+      marginTop:"100px"
+      
+    },
   },
   appBar: {
     backgroundColor: "black",
     color:"white",
     display:"flex",
-    flexDirection:"row",
+
+    flexDirection:"column",
     alignItems:"center",
-    paddingLeft:"25px",
+    
+    [theme.breakpoints.up('sm')]: {
+      display:"flex",
+      flexDirection:"row",
+      paddingLeft:"25px",
+      
+    },
     
   },
   tennis:{
     color:"white",
+    [theme.breakpoints.up('sm')]: {
+      paddingLeft:"30px",
+    },
     
   },
   menuButton: {
@@ -38,13 +51,18 @@ const useStyles = makeStyles((theme) => ({
   },
   grow: {
     flexGrow: 1,
+    
   },
   button: {
     marginLeft: theme.spacing(4),
   },
   image: {
     marginRight: "10px",
-    height:"4rem"
+    height:"4rem",
+    paddingLeft:"25px",
+    [theme.breakpoints.up('sm')]: {
+      paddingLeft:"30px",
+    },
     
   },
   link:{
@@ -52,6 +70,7 @@ const useStyles = makeStyles((theme) => ({
   }
 }));
 export default function Navbar() {
+ 
   const classes= useStyles();
   const history = useHistory();
   const [{ basket ,user}, dispatch] = useStateValue();
@@ -89,18 +108,18 @@ export default function Navbar() {
               </Link>
               <Link to="product-tennis" className={classes.link}>
               <Typography variant="h6"  component="p" className={classes.tennis} >
-                Tennis&nbsp;&nbsp;&nbsp;&nbsp;
+                Tennis
               </Typography>
               </Link>
-              <br />
+            
               <Link to="product-padel" className={classes.link}>
               <Typography variant="h6"  component="p" className={classes.tennis}>
-                Padel&nbsp;&nbsp;&nbsp;&nbsp;
+                Padel
               </Typography>
               </Link>
               <Link to="product-sale" className={classes.link}>
               <Typography variant="h6"  component="p" className={classes.tennis}>
-                Sale&nbsp;&nbsp;&nbsp;&nbsp;
+                Sale
               </Typography>
               </Link>
             

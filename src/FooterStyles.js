@@ -2,9 +2,9 @@ import styled from 'styled-components';
 
 export const Box = styled.div`
 padding: 63px 0px;
-background-color:black;
+
 bottom:0;
- 
+background-color:black;
 
 
 @media (max-width: 1000px) {

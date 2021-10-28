@@ -12,9 +12,9 @@ import { actionTypes } from './reducer';
 import { useStateValue } from "./StateProvider";
 import Checkout from './components/CheckoutForm/Checkout';
 import Footer from './footer';
-
-
-
+import ProductsTennis from './components/ProductTennis';
+import ProductsPadel from './components/ProductPadel';
+import ProductsSale from './components/ProductSale';
 
 
 function App() {
@@ -45,12 +45,15 @@ return (
     <div className='app'>
       <Navbar />
       <Switch>
-      {/* <Route path='/crud'>
-          <Crud />
-        </Route> */}
-      {/* <Route path='/clientes'>
-          <Clientes />
-        </Route> */}
+      <Route path='/product-sale'>
+          <ProductsSale />
+        </Route>
+      { <Route path='/product-padel'>
+          <ProductsPadel />
+        </Route> }
+      { <Route path='/product-tennis'>
+          <ProductsTennis />
+        </Route> }
         <Route path='/signup'>
           <SignUp />
         </Route>

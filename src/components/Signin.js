@@ -45,6 +45,9 @@ const useStyles = makeStyles((theme) => ({
   submit: {
     margin: theme.spacing(3, 0, 2),
   },
+  link:{
+    textDecoration: 'none'
+  }
   
 }));
 
@@ -70,7 +73,7 @@ export default function SignIn() {
         <Avatar className={classes.avatar}>
           <LockOutlinedIcon />
         </Avatar>
-        <Typography component='h1' variant='h5'>
+        <Typography component='h1' variant='h5' className={classes.link}>
           Iniciar sesion
         </Typography>
         <form className={classes.form} noValidate>

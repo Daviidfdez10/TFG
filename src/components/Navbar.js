@@ -23,8 +23,15 @@ const useStyles = makeStyles((theme) => ({
   appBar: {
     backgroundColor: "black",
     color:"white",
-    boxShadow: "none",
-
+    display:"flex",
+    flexDirection:"row",
+    alignItems:"center",
+    paddingLeft:"25px",
+    
+  },
+  tennis:{
+    color:"white",
+    
   },
   menuButton: {
    /*  color:"white", */
@@ -40,6 +47,9 @@ const useStyles = makeStyles((theme) => ({
     height:"4rem"
     
   },
+  link:{
+    textDecoration: 'none'
+  }
 }));
 export default function Navbar() {
   const classes= useStyles();
@@ -66,16 +76,34 @@ export default function Navbar() {
     <div className={classes.root}>
 
     <AppBar position='fixed' className={classes.appBar}>
-      <Toolbar>
+      
           <Link to="/">
           <IconButton edge="start" className={classes.menuButton} color="inherit" aria-label="menu">
                 <img
                   alt="description"
                   src={de}
                   className={classes.image}
+                  
                 />
               </IconButton>
               </Link>
+              <Link to="product-tennis" className={classes.link}>
+              <Typography variant="h6"  component="p" className={classes.tennis} >
+                Tennis&nbsp;&nbsp;&nbsp;&nbsp;
+              </Typography>
+              </Link>
+              <br />
+              <Link to="product-padel" className={classes.link}>
+              <Typography variant="h6"  component="p" className={classes.tennis}>
+                Padel&nbsp;&nbsp;&nbsp;&nbsp;
+              </Typography>
+              </Link>
+              <Link to="product-sale" className={classes.link}>
+              <Typography variant="h6"  component="p" className={classes.tennis}>
+                Sale&nbsp;&nbsp;&nbsp;&nbsp;
+              </Typography>
+              </Link>
+            
             
               <div className={classes.grow}/>
             
@@ -88,7 +116,7 @@ export default function Navbar() {
               <div className={classes.button}>
                 <Link to="/signin">
                 <Button variant="outlined" onClick={handleAuth} color="secondary">
-                <strong>{user ? "Cerrar sesion": "Iniciar sesion"}</strong>
+                <div >{user ? "Cerrar sesion": "Iniciar sesion"}</div>
                 </Button>
                    </Link>
                 
@@ -104,7 +132,7 @@ export default function Navbar() {
                 
 
               </div>
-        </Toolbar>      
+          
       </AppBar>
       
     </div>

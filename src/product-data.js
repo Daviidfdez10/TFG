@@ -1,7 +1,7 @@
 const products = [
     {
       id:14 ,
-      name: "FLASH",
+      name: "Flash",
       productType: "PALAS",
       price: 80,
       rating: 4,
@@ -12,8 +12,8 @@ const products = [
     },
     {
       id: 15,
-      name: "ROBIN SKART",
-      productType: "VISION",
+      name: "Robin skart",
+      productType: "ROPA",
       price: 31.50,
       rating: 3,
       image:
@@ -23,8 +23,8 @@ const products = [
     },
     {
       id: 16,
-      name: "IVAN T-SHIRT",
-      productType: "CLUB",
+      name: "Ivan T-shirt",
+      productType: "ROPA",
       price: 20,
       rating: 5,
       image:
@@ -35,8 +35,8 @@ const products = [
     
     {
       id: 17,
-      name: "POWER SHORTS M",
-      productType: "CARZONAS",
+      name: "Power short M",
+      productType: "ROPA",
       price: 55,
       rating: 3,
       image:

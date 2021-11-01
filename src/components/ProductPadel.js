@@ -3,19 +3,27 @@ import { Grid } from "@material-ui/core";
 import React from "react";
 import Product from "./Product";
 import products from "../product-data-padel";
-
+import banner from '../assets/banner.jpg'
 const useStyles = makeStyles((theme) => ({
-    root: {
-      flexGrow: 1,
-      padding:theme.spacing(3),
-      paddingTop:"200px",
-      [theme.breakpoints.up('sm')]: {
-        paddingTop:"10px"
-        
-      },
+  root: {
+    flexGrow: 1,
+    padding:theme.spacing(3),
+    paddingTop:"200px",
+    [theme.breakpoints.up('sm')]: {
+      paddingTop:"10px"
+      
     },
-   
-  }));
+  },
+  banner : {
+    maxWidth:"490px", 
+ 
+   [theme.breakpoints.up('sm')]: {
+    maxWidth:"100%",
+    paddingLeft:"80px",
+  }
+}
+ 
+}));
 
   export default function ProductsPadel(){
       const classes= useStyles();
@@ -49,7 +57,13 @@ const useStyles = makeStyles((theme) => ({
 
             
               </Grid>
+              <a href="https://ciclos.iesruizgijon.es/" title="Subscripcion prime" target="_blank">
+              <img src={banner}
               
+                    alt="description"
+                       className={classes.banner}
+                       />
+</a>
           </div>
       );
   }

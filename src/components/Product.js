@@ -23,7 +23,7 @@ const useStyles = makeStyles((theme) => ({
    },
   action: {
     marginTop: "0.5rem",
-    color:"red"
+    color:"black"
     
   },
   media: {

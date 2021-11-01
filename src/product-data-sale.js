@@ -2,20 +2,20 @@ const products = [
   
     {
       id: 18,
-      name: "REVOLT women",
-      productType: "Shoes",
-      price: 84,
-      rating: 4,
+      name: "Monstercombi Djokovic",
+      productType: "COMPLEMENTOS",
+      price: 100,
+      rating: 2,
       image:
-        "https://cdn-mdb.head.com/CDN3/D/274110/1/768x768/revolt-pro-3-0-clay-women.jpg",
+        "https://cdn-mdb.head.com/CDN3/D/283061_WHBK/1/768x768/djokovic-12r-monstercombi-white-black.jpg",
       description:
-        "Cada vez que te mueves, giras o realizas un saque, los pantalones cortos POWER SHORTS para hombre se estiran contigo, gracias al innovador tejido ripstop con 4-way stretch.",
+        "La exclusiva bolsa DJOKOVIC 12R MONSTERCOMBI viene con todos los compartimentos y bolsillos que necesitas para no quedarte nunca corto de espacio.",
     },  
   
     {
         id: 19,
-        name: "DAVIES T-SHIRT",
-        productType: "VISION",
+        name: "Davies T-shirt",
+        productType: "ROPA",
         price: 24.50,
         rating: 3,
         image:
@@ -25,8 +25,8 @@ const products = [
       },  
       {
         id: 20,
-        name: "STRIKER T-SHIRT B",
-        productType: "VISION",
+        name: "Striker T-shirt B",
+        productType: "ROPA",
         price: 24.50,
         rating: 5,
         image:
@@ -36,8 +36,8 @@ const products = [
       }, 
       {
         id: 21,
-        name: "STRIKER T-SHIRT B",
-        productType: "VISION",
+        name: "Striker T-shirt B",
+        productType: "ROPA",
         price: 24.50,
         rating: 5,
         image:

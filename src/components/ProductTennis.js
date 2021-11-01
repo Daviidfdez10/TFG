@@ -3,6 +3,7 @@ import { Grid } from "@material-ui/core";
 import React from "react";
 import Product from "./Product";
 import products from "../product-data-tennis";
+import banner from '../assets/banner.jpg';
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -14,6 +15,14 @@ const useStyles = makeStyles((theme) => ({
         
       },
     },
+    banner : {
+      maxWidth:"490px", 
+   
+     [theme.breakpoints.up('sm')]: {
+      maxWidth:"100%",
+      paddingLeft:"80px",
+    }
+  }
    
   }));
 
@@ -47,7 +56,13 @@ const useStyles = makeStyles((theme) => ({
 
             
               </Grid>
+              <a href="https://ciclos.iesruizgijon.es/" title="Subscripcion prime" target="_blank">
+              <img src={banner}
               
+                    alt="description"
+                       className={classes.banner}
+                       />
+</a>
           </div>
       );
   }

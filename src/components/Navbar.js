@@ -6,6 +6,7 @@ import IconButton from "@material-ui/core/IconButton";
 import { Badge, Button } from "@material-ui/core";
 import { ShoppingCart } from "@material-ui/icons";
 import de from '../assets/de.png'
+import logo from '../assets/logo.png'
 import React from "react";
 import { useStateValue } from "../StateProvider";
 import { useHistory } from "react-router-dom";
@@ -14,33 +15,33 @@ import { auth } from "../firebase";
 import { actionTypes } from "../reducer";
 
 
+
 const useStyles = makeStyles((theme) => ({
   root: {
     textAlign:"center",
     marginBottom: "7rem",
     [theme.breakpoints.up('sm')]: {
-      marginTop:"100px"
+      
       
     },
   },
   appBar: {
     backgroundColor: "black",
-    color:"white",
     display:"flex",
-
+  
     flexDirection:"column",
     alignItems:"center",
-    
     [theme.breakpoints.up('sm')]: {
       display:"flex",
       flexDirection:"row",
-      paddingLeft:"25px",
+      paddingLeft:"15px",
       
     },
     
   },
   tennis:{
     color:"white",
+    height:"20px",
     [theme.breakpoints.up('sm')]: {
       paddingLeft:"30px",
     },
@@ -58,17 +59,27 @@ const useStyles = makeStyles((theme) => ({
   },
   image: {
     marginRight: "10px",
-    height:"4rem",
+    height:"40px",
     paddingLeft:"25px",
+    marginTop:"9px",
     [theme.breakpoints.up('sm')]: {
       paddingLeft:"30px",
     },
     
   },
   link:{
-    textDecoration: 'none'
+    textDecoration:"none"
+  },
+  iniciar:{
+    color:"white",
+    textDecoration:"none",
+    borderColor:"white",
+    
   }
 }));
+
+
+
 export default function Navbar() {
  
   const classes= useStyles();
@@ -100,7 +111,7 @@ export default function Navbar() {
           <IconButton edge="start" className={classes.menuButton} color="inherit" aria-label="menu">
                 <img
                   alt="description"
-                  src={de}
+                  src={logo}
                   className={classes.image}
                   
                 />
@@ -108,7 +119,7 @@ export default function Navbar() {
               </Link>
               <Link to="product-tennis" className={classes.link}>
               <Typography variant="h6"  component="p" className={classes.tennis} >
-                Tennis
+                Tenis
               </Typography>
               </Link>
             
@@ -119,7 +130,7 @@ export default function Navbar() {
               </Link>
               <Link to="product-sale" className={classes.link}>
               <Typography variant="h6"  component="p" className={classes.tennis}>
-                Sale
+                Ofertas
               </Typography>
               </Link>
             
@@ -134,8 +145,8 @@ export default function Navbar() {
               </Typography>
               <div className={classes.button}>
                 <Link to="/signin">
-                <Button variant="outlined" onClick={handleAuth} color="secondary">
-                <div >{user ? "Cerrar sesion": "Iniciar sesion"}</div>
+                <Button variant="outlined" onClick={handleAuth} className={classes.iniciar}>
+                <div className={classes.iniciar}>{user ? "Cerrar sesion": "Iniciar sesion"}</div>
                 </Button>
                    </Link>
                 

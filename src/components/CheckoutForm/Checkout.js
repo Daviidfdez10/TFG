@@ -45,7 +45,7 @@ const Checkout = () => {
   return (
     <>
       <CssBaseline />
-      <div className={classes.layout}  style={{marginTop:"220px" }}>
+      <div className={classes.layout}  >
        
           <Typography component='h1' variant='h4' align='center'>
             Checkout

@@ -4,11 +4,15 @@ import React from "react";
 import Product from "./Product";
 import products from "../product-data";
 import { textAlign } from "@mui/system";
-import oromana from '../assets/oromana.jpeg'
-import torneo2 from '../assets/torneo2.jpeg'
-import david from '../assets/david.jpeg'
+import femenina from '../assets/femenina.jpg'
+import murray from '../assets/murray.jpg'
+import banner from '../assets/banner.jpg'
+import djokovic from '../assets/djokovic.jpg'
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from 'react-responsive-carousel';
+
+
+
 const useStyles = makeStyles((theme) => ({
     root: {
       flexGrow: 1,
@@ -24,18 +28,46 @@ const useStyles = makeStyles((theme) => ({
       marginTop:"20px"
     },
     image:{
-      maxWidth:1500,
+      maxWidth:"100%",
+    
       
     },
-    image2:{
-      maxWidth:1000,
-      
+    centrado:{
+      position:"absolute",
+      top:"60%",
+      left:"10%",
+      transform: "translate(-50%, -50%)",
+      fontSize:"10px",
+      color:"white",
+      fontWeight:"bold",
+      [theme.breakpoints.up('sm')]: {
+        paddingTop:"10px",
+        fontSize:"30px",
+      },
     },
    
     flex : {
       display:"flex",
       flexDirection:"row",
-    }
+    },
+
+    enlace : {
+      backgroundColor:"white",
+      color:"black",
+      padding:"2px 5px",
+      textDecoration:"none",
+      borderRadius:"5px",
+      border:"2px solid black"
+
+    },
+   banner : {
+      maxWidth:"490px", 
+   
+     [theme.breakpoints.up('sm')]: {
+      maxWidth:"100%",
+      paddingLeft:"80px",
+    },
+   }
    
   }));
 
@@ -47,36 +79,50 @@ const useStyles = makeStyles((theme) => ({
       return (
           <div className={classes.root}>
           <h1
-             style={{ color: "black",
+             style={{ color: "white",
              textAlign: "center",
              fontSize:50,
-             marginTop: "-10px" }}
+             marginTop: "-50px" }}
             
              
-            >Fotos de torneos ganados </h1>
+            > </h1>
                   <Carousel>
                 <div>
-                    <img src={david} 
+                    <img src={djokovic} 
                     alt="description"
-                       className={classes.image}/>
-                  
+                       className={classes.image}
+                       />
+                   
+                      <div className={classes.centrado}>Novak djokovic <br/>Nº1 ATP <br />
+                      <a className={classes.enlace} href="https://www.atptour.com/es/rankings/singles" target="_blank">Ver ranking</a>
+                      
+                      </div>
+                                        
                 </div>
                 <div>
-                <img src={torneo2}
+                <img src={femenina}
                 alt="description"
                  className={classes.image}
                   />
+                     <div className={classes.centrado}>Alexander Zverev<br/>Nº4 ATP <br />
+                     <a className={classes.enlace} href="https://www.atptour.com/es/rankings/singles" target="_blank">Ver ranking</a>
+
+                     </div>
                 </div>
                 <div>
-                <img src={oromana} 
+                <img src={murray} 
                 alt="description"
-                 className={classes.image2}/>
+                 className={classes.image}/>
+                <div className={classes.centrado}>Marin Cilic<br/>Nº35 ATP <br />
+                <a className={classes.enlace} href="https://www.atptour.com/es/rankings/singles" target="_blank">Ver ranking</a>
+
+                </div>
                 </div>
             </Carousel>
             <h1
              style={{ color: "black",
              textAlign: "center",
-             fontSize:50,
+             
              marginTop: "-10px" }}
             
              
@@ -96,7 +142,16 @@ const useStyles = makeStyles((theme) => ({
 
             
               </Grid>
-             
+              <a href="https://ciclos.iesruizgijon.es/" title="Subscripcion prime" target="_blank">
+              <img src={banner}
+              
+                    alt="description"
+                       className={classes.banner}
+                       />
+                        <div className={classes.centrado}>Marin Cilic<br/>Nº35 ATP <br />
+                        </div>
+</a>
+
           </div>
       );
   }

@@ -22,7 +22,7 @@ const useStyles = makeStyles((theme) => ({
     height:"61.9vh",
     backgroundColor:"white",
     borderRadius:"1 px solid black",
-    paddingTop:"120px",
+    paddingTop:"70px",
     [theme.breakpoints.up('sm')]: {
       paddingTop:"10px"
       
@@ -79,7 +79,7 @@ export default function SignIn() {
           <LockOutlinedIcon />
         </Avatar>
         <Typography component='h1' variant='h5' className={classes.link}>
-          Iniciar sesion
+          Iniciar sesión
         </Typography>
         <form className={classes.form} noValidate>
           <TextField
@@ -108,10 +108,7 @@ export default function SignIn() {
             id='password'
             autoComplete='current-password'
           />
-          <FormControlLabel
-            control={<Checkbox value='remember' color='secondary' />}
-            label='Recordarme'
-          />
+         
           <Button
             onClick={signin}
             type='submit'
@@ -120,7 +117,7 @@ export default function SignIn() {
             color='secondary'
             className={classes.submit}
           >
-            Iniciar sesion
+            Iniciar sesión
           </Button>
           <Grid container>
             <Grid item xs>
@@ -130,7 +127,7 @@ export default function SignIn() {
             </Grid>
             <Grid item container justify='center'>
               <RouteLink to='/signup'>
-                {"No tienes una cuenta? Creala"}
+                {"No tienes una cuenta? Crear"}
               </RouteLink>
             </Grid>
           </Grid>

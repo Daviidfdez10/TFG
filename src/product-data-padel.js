@@ -1,50 +1,27 @@
 const products = [
     {
         id: 4,
-        name: "Sprint pro 3.0",
-        productType: "Zapatos",
-        price: 150,
-        rating: 5,
+        name: "Gamma motion",
+        productType: "PALAS",
+        price: 200,
+        rating: 4,
         image:
-          "https://cdn-mdb.head.com/CDN3/D/273001/1/1200x1200/sprint-pro-3-0-men.jpg",
+          "https://cdn-mdb.head.com/CDN3/D/228171/1/768x768/graphene-360-gamma-motion.jpg",
         description:
-          "Las SPRINT PRO 3.0 llevan la combinación de bajo peso y comodidad al siguiente nivel y son las zapatillas perfectas para jugadores que necesitan ser más rápidos en la pista.",
+          "Una geometría única para jugadoras que buscan una pala con una relación perfecta entre potencia y control, además de tener un toque sin igual gracias al Graphene 360+.",
       },
       {
         id: 5,
-        name: "Revolt pro 5.0",
-        productType: "Zapatos",
-        price: 125,
-        rating: 4,
+        name: "Gamma pro",
+        productType: "PALAS",
+        price: 220,
+        rating: 5,
         image:
-          "https://cdn-mdb.head.com/CDN3/D/273151/1/1200x1200/revolt-pro-3-5-clay-men.jpg",
+          "https://cdn-mdb.head.com/CDN3/D/228161/1/768x768/graphene-360-gamma-pro.jpg",
         description:
-          "Las HEAD REVOLT PRO 3.5 CLAY son unas zapatillas técnicas de primera calidad para tierra batida que ofrecen una combinación óptima de confort y estabilidad. Ahora están disponibles con un nuevo diseño de empeine y una nueva construcción del talón.",
+          "Una geometría única para jugadores que buscan una pala con una relación perfecta entre potencia y control, además de tener un toque sin igual gracias al Graphene 360+.",
       },
       {
-        id: 6,
-        name: "Sprint pro 3.0",
-        productType: "Zapatos",
-        price: 130,
-        rating: 4,
-        image:
-          "https://cdn-mdb.head.com/CDN3/D/273760/1/1200x1200/sprint-pro-3-0-grass-men.jpg",
-        description:
-          "Las zapatillas SPRINT PRO 3.0 GRASS, diseñadas para ofrecer una gran velocidad sobre hierba, ofrecen además niveles inusitados de ligereza y confort.",
-      },
-      {
-        id: 7,
-        name: "Revolt team 5",
-        productType: "Zapatos",
-        price: 130,
-        rating: 3,
-        image:
-          "https://cdn-mdb.head.com/CDN3/D/273201/1/1200x1200/revolt-team-3-5-men.jpg",
-        description:
-          "Las zapatillas REVOLT TEAM 3.5 son aptas para todo tipo de superficies y son la opción perfecta para los jugadores de nivel avanzado que buscan unas zapatillas cómodas y estables.",
-      },
-
-    {
         id: 13,
         name: "Delta hybrid",
         productType: "Palas",
@@ -56,9 +33,33 @@ const products = [
           "Mejor jugabilidad, mayor punto dulce y más potencia aún en la nueva pala Delta Hybrid para salir de la pista triunfante",
       },
       {
+        id: 6,
+        name: "Player gorra",
+        productType: "COMPLEMENTOS",
+        price: 20,
+        rating: 4,
+        image:
+          "https://cdn-mdb.head.com/CDN3/D/287159_BK/1/768x768/pro-player-cap-black.jpg",
+        description:
+          "La gorra PRO PLAYER, superligera y de uso aprobado en torneos, ofrece todo lo que se desea de una gorra de tenis y padel.",
+      },
+      {
+        id: 7,
+        name: "MONSTERCOMBI",
+        productType: "PALETERO",
+        price: 75,
+        rating: 5,
+        image:
+          "https://cdn-mdb.head.com/CDN3/D/283591_BKMX/1/768x768/tour-team-padel-monstercombi-bkmx.jpg",
+        description:
+          "Si necesitas mucho espacio esta bolsa de nueva construcción y súper equipada, vuelve una vez más, más grande y espaciosa, y en tres colores distintos.",
+      },
+
+  
+      {
         id: 11,
         name: "Padel hoodie",
-        productType: "Sudaderas",
+        productType: "ROPA",
         price: 60,
         rating: 5,
         image:
@@ -69,7 +70,7 @@ const products = [
       {
         id: 12,
         name: "Fynn hoodie",
-        productType: "Sudaderas",
+        productType: "ROPA",
         price: 67,
         rating: 4,
         image:
@@ -77,6 +78,7 @@ const products = [
         description:
           "La sudadera Club Fynn es una cómoda chaqueta con capucha, ideal para disfrutar en las pistas o para ir a donde surja.",
       },
+    
     ];
       export default products;
     

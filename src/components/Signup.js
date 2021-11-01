@@ -21,7 +21,7 @@ const useStyles = makeStyles((theme) => ({
       height:"61.9vh",
       backgroundColor:"white",
     borderRadius:"1 px solid black",
-    paddingTop:"60px",
+    paddingTop:"33px",
     [theme.breakpoints.up('sm')]: {
       paddingTop:"0px"
       
@@ -129,9 +129,9 @@ export default function SignUp() {
             </Grid>
             <Grid item xs={12}>
               <FormControlLabel
-                control={<Checkbox value='allowExtraEmails' color='secondary' />}
+                control={<Checkbox value='allowExtraEmails' color='secondary' required />}
                 label='Estoy de acuerdo con los derechos de contenido.'
-                required
+                
               />
             </Grid>
           </Grid>
@@ -148,7 +148,7 @@ export default function SignUp() {
           <Grid container justify='center'>
             <Grid item>
               <RouteLink to='/signin'>
-                Tienes una cuenta? Iniciar sesion
+                Tienes una cuenta? Iniciar sesión
               </RouteLink>
             </Grid>
           </Grid>

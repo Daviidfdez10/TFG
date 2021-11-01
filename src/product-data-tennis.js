@@ -34,47 +34,47 @@ const products = [
     },
     {
         id: 4,
-        name: "Sprint pro 3.0",
-        productType: "Zapatos",
+        name: "Function gorra",
+        productType: "COMPLEMENTOS",
         price: 150,
         rating: 5,
         image:
-          "https://cdn-mdb.head.com/CDN3/D/273001/1/1200x1200/sprint-pro-3-0-men.jpg",
+          "https://cdn-mdb.head.com/CDN3/D/287060_BKYW/1/768x768/light-function-cap-tonal-black-yellow.jpg",
         description:
-          "Las SPRINT PRO 3.0 llevan la combinación de bajo peso y comodidad al siguiente nivel y son las zapatillas perfectas para jugadores que necesitan ser más rápidos en la pista.",
+          "La GORRA LIGHT FUNCTION TONAL es una gorra de altas prestaciones negra y elegante que ofrece lo máximo en protección y funcionalidad.",
       },
       {
         id: 5,
-        name: "Revolt pro 5.0",
-        productType: "Zapatos",
-        price: 125,
-        rating: 4,
+        name: "Team zack",
+        productType: "COMPLEMENTOS",
+        price: 10,
+        rating: 1,
         image:
-          "https://cdn-mdb.head.com/CDN3/D/273151/1/1200x1200/revolt-pro-3-5-clay-men.jpg",
+          "https://cdn-mdb.head.com/CDN3/D/283311_GRNY/1/768x768/tour-team-shoe-sack-grey-neon-yellow.jpg",
         description:
-          "Las HEAD REVOLT PRO 3.5 CLAY son unas zapatillas técnicas de primera calidad para tierra batida que ofrecen una combinación óptima de confort y estabilidad. Ahora están disponibles con un nuevo diseño de empeine y una nueva construcción del talón.",
+          "La bolsa para zapatillas Tour Team está hecha para llevar un par de zapatillas, y de hecho cualquier otra cosa que tengas que llevar a la pista o incluso para salir de compras..",
       },
       {
         id: 6,
-        name: "Sprint pro 3.0",
-        productType: "Zapatos",
-        price: 130,
-        rating: 4,
+        name: "Antivibrador",
+        productType: "COMPLEMENTOS",
+        price: 7,
+        rating: 2,
         image:
-          "https://cdn-mdb.head.com/CDN3/D/273760/1/1200x1200/sprint-pro-3-0-grass-men.jpg",
+          "https://cdn-mdb.head.com/CDN3/D/285515_YW/1/768x768/pro-damp-yellow.jpg",
         description:
-          "Las zapatillas SPRINT PRO 3.0 GRASS, diseñadas para ofrecer una gran velocidad sobre hierba, ofrecen además niveles inusitados de ligereza y confort.",
+          "Con el nuevo PRO DAMP de HEAD, podrás olvidarte de las molestas vibraciones",
       },
       {
         id: 7,
-        name: "Revolt team 5",
-        productType: "Zapatos",
-        price: 130,
+        name: "Polo tshirt",
+        productType: "ROPA",
+        price: 31.50,
         rating: 3,
         image:
-          "https://cdn-mdb.head.com/CDN3/D/273201/1/1200x1200/revolt-team-3-5-men.jpg",
+          "https://cdn-mdb.head.com/CDN3/D/811339_RD/1/768x768/club-tech-polo-shirt-m-red.jpg",
         description:
-          "Las zapatillas REVOLT TEAM 3.5 son aptas para todo tipo de superficies y son la opción perfecta para los jugadores de nivel avanzado que buscan unas zapatillas cómodas y estables.",
+          "El polo Club Tech combina varios elementos modernos de diseño con una cómoda mezcla de materiales, para disfrutar de la salida en equipo perfecta.",
       },
       {
         id: 8,

@@ -6,17 +6,20 @@ export default makeStyles((theme) => ({
   },
   layout: {
     width: "auto",
+    marginTop:"220px",
     backgroundColor:"white",
     border:" 2px solid black",
     marginLeft: theme.spacing(2),
     marginRight: theme.spacing(2),
     [theme.breakpoints.up(600 + theme.spacing(2) * 2)]: {
       width: 600,
+      marginTop:"80px",
       marginLeft: "auto",
       marginRight: "auto",
     },
   },
   paper: {
+   
     marginTop: theme.spacing(3),
     marginBottom: theme.spacing(3),
     padding: theme.spacing(2),

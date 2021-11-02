@@ -61,11 +61,11 @@ const useStyles = makeStyles((theme) => ({
 
     },
    banner : {
-      maxWidth:"490px", 
+      maxWidth:"100%", 
    
      [theme.breakpoints.up('sm')]: {
       maxWidth:"100%",
-      paddingLeft:"80px",
+   
     },
    }
    
@@ -142,15 +142,17 @@ const useStyles = makeStyles((theme) => ({
 
             
               </Grid>
+              <Grid item xs={12} sm={12} md={12} lg={12}>
               <a href="https://ciclos.iesruizgijon.es/" title="Subscripcion prime" target="_blank">
               <img src={banner}
               
                     alt="description"
                        className={classes.banner}
                        />
-                        <div className={classes.centrado}>Marin Cilic<br/>Nº35 ATP <br />
-                        </div>
+                        
 </a>
+                    </Grid>
+           
 
           </div>
       );

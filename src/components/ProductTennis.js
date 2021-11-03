@@ -22,7 +22,20 @@ const useStyles = makeStyles((theme) => ({
       maxWidth:"100%",
       
     }
-  }
+  },
+  xd : {
+    position:"absolute",
+    top:"77%",
+    left:"45%",
+    transform: "translate(-50%, -50%)",
+    fontSize:"10px",
+    color:"white",
+    fontWeight:"bold",
+       [theme.breakpoints.up('sm')]: {
+      paddingTop:"10px",
+      fontSize:"30px",
+    },
+   }
    
   }));
 
@@ -57,14 +70,19 @@ const useStyles = makeStyles((theme) => ({
             
               </Grid>
               <Grid item xs={12} sm={12} md={12} lg={12}>
+              <div>
               <a href="https://ciclos.iesruizgijon.es/" title="Subscripcion prime" target="_blank">
+              
               <img src={banner}
               
                     alt="description"
                        className={classes.banner}
                        />
+                       <div className={classes.xd}>Subscripcion prime 
+              </div>
                         
 </a>
+</div>
                     </Grid>
           </div>
       );

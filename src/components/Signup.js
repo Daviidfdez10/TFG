@@ -21,7 +21,7 @@ const useStyles = makeStyles((theme) => ({
       height:"61.9vh",
       backgroundColor:"white",
     borderRadius:"1 px solid black",
-    paddingTop:"33px",
+    paddingTop:"1px",
     [theme.breakpoints.up('sm')]: {
       paddingTop:"0px"
       

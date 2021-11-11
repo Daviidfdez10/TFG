@@ -15,6 +15,7 @@ import Footer from './footer';
 import ProductsTennis from './components/ProductTennis';
 import ProductsPadel from './components/ProductPadel';
 import ProductsSale from './components/ProductSale';
+import Barra from './components/Navbar';
 
 
 function App() {
@@ -43,7 +44,7 @@ function App() {
 return (
   <Router>
     <div className='app'>
-      <Navbar />
+      <Barra />
       <Switch>
       <Route path='/product-sale'>
           <ProductsSale />

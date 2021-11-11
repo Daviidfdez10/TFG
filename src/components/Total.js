@@ -22,10 +22,31 @@ const Total = () =>{
     const [{ basket }, dispatch] = useStateValue();
     const classes= useStyles()
     console.log(dispatch);
-    return (
+    const g=basket?.length;
+    if(g===0){
+      return (
+        
+        <Button
+        component={Link}
+        to='/'
+        className={classes.button}
+        variant='contained'
+        color='dark'
+        
+      >
+
+        Volver
+      </Button>
+        
+      )
+    } else {
+
+    
+ 
+      return (
         <div className={classes.root}>
           
-            <h5>Total:{basket?.length} </h5>
+            <h5>Total:{g} </h5>
             <h4>{accounting.formatMoney(getBasketTotal(basket), "€")}</h4>
             <Button
         component={Link}
@@ -33,11 +54,15 @@ const Total = () =>{
         className={classes.button}
         variant='contained'
         color='dark'
+        
       >
         Comprar
       </Button>
+      
         </div>
+        
     )
+      }
 }
 
 export default Total

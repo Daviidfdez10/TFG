@@ -78,8 +78,7 @@ xd : {
                     alt="description"
                        className={classes.banner}
                        />
-                       <div className={classes.xd}>Subscripcion prime 
-              </div>
+                  
                         
 </a>
 </div>

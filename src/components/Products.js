@@ -35,7 +35,7 @@ const useStyles = makeStyles((theme) => ({
     centrado:{
       position:"absolute",
       top:"60%",
-      left:"10%",
+      left:"20%",
       transform: "translate(-50%, -50%)",
       fontSize:"10px",
       color:"white",
@@ -43,6 +43,9 @@ const useStyles = makeStyles((theme) => ({
       [theme.breakpoints.up('sm')]: {
         paddingTop:"10px",
         fontSize:"30px",
+      },
+      [theme.breakpoints.up('md')]: {
+        left:"10%",
       },
     },
    
@@ -68,18 +71,21 @@ const useStyles = makeStyles((theme) => ({
    
     },
    },
+   
    xd : {
     position:"absolute",
-    top:"76%",
-    left:"45%",
+    left:"15%",
     transform: "translate(-50%, -50%)",
-    fontSize:"10px",
+    fontSize:"5px",
     color:"white",
     fontWeight:"bold",
        [theme.breakpoints.up('sm')]: {
       paddingTop:"10px",
-      fontSize:"30px",
+      left:"45%",
+      display:"inline-flex",
+      fontSize:"18px",
     },
+    
    }
    
   }));
@@ -157,15 +163,14 @@ const useStyles = makeStyles((theme) => ({
               </Grid>
               <Grid item xs={12} sm={12} md={12} lg={12}>
                 <div>
-              <a href="https://ciclos.iesruizgijon.es/" title="Subscripcion prime" target="_blank">
+              <a href="https://ciclos.iesruizgijon.es/" title="Subscripcion prime" target="_blank" className={classes.a}>
               
               <img src={banner}
               
                     alt="description"
                        className={classes.banner}
                        />
-                       <div className={classes.xd}>Subscripcion prime 
-              </div>
+                
                         
 </a>
 </div>

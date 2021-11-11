@@ -15,7 +15,6 @@ import { auth } from "../firebase";
 import { actionTypes } from "../reducer";
 
 
-
 const useStyles = makeStyles((theme) => ({
   root: {
     textAlign:"center",
@@ -80,7 +79,7 @@ const useStyles = makeStyles((theme) => ({
 
 
 
-export default function Navbar() {
+export default function Barra() {
  
   const classes= useStyles();
   const history = useHistory();
@@ -105,7 +104,7 @@ export default function Navbar() {
   return (
     <div className={classes.root}>
 
-    <AppBar position='fixed' className={classes.appBar}>
+    <AppBar collapseOnSelect fixed='top' expand='sm' bg='dark' variant='dark' className={classes.appBar}>
       
           <Link to="/">
           <IconButton edge="start" className={classes.menuButton} color="inherit" aria-label="menu">

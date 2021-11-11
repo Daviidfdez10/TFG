@@ -98,10 +98,12 @@ return (
       {"."}
     </Typography>
 	</Column>
-    <Typography color='TextWhite' align='center'>
-        <br /> {new Date().getFullYear()+"-"+(new Date().getMonth()+1)+"-"+ new Date().getDate()}
+	<Column>
+    <Typography variant='p' color='white' align='center'>
+        <br /> {"new Date().getFullYear()+"-"+(new Date().getMonth()+1)+"-"+ new Date().getDate()"}
       <br /> {new Date().getHours()+":"+new Date().getMinutes()+":"+ new Date ().getSeconds()}
 </Typography>
+</Column>
 	</Container>
 	</Box>
     

@@ -2,7 +2,7 @@ const products = [
   
     {
       id: 18,
-      name: "Monstercombi Djokovic",
+      name: "Monstercombi",
       productType: "COMPLEMENTOS",
       price: 100,
       rating: 2,

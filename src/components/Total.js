@@ -1,7 +1,7 @@
 import { getBasketTotal } from "../reducer";
 import React from "react";
 import accounting from "accounting";
-import {Button, makeStyles } from "@material-ui/core";
+import {Button, makeStyles, Typography } from "@material-ui/core";
 import { useStateValue } from "../StateProvider";
 import { Link } from "react-router-dom";
 
@@ -15,8 +15,12 @@ root:{
     height:"52.1vh"
 },
 button:{
-   marginTop:"2rem",
-}
+   marginTop:"12.15rem",
+   
+},
+  letras: {
+    textAlign:"center"
+  }
 }))
 const Total = () =>{
     const [{ basket }, dispatch] = useStateValue();
@@ -25,6 +29,10 @@ const Total = () =>{
     const g=basket?.length;
     if(g===0){
       return (
+        <div>
+        <Typography  className={classes.letras}>
+        <h2>Total:{g} </h2>
+        </Typography>
         
         <Button
         component={Link}
@@ -34,10 +42,10 @@ const Total = () =>{
         color='dark'
         
       >
-
+   
         Volver
       </Button>
-        
+      </div>
       )
     } else {
 

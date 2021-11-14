@@ -104,7 +104,7 @@ const CheckoutForm = ({ backStep, nextStep }) => {
         }}
       >
         <Button onClick={backStep} variant="outlined">
-          Back
+          Volver
         </Button>
         <Button
           type="submit"

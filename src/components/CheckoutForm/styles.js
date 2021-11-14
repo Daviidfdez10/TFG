@@ -9,6 +9,7 @@ export default makeStyles((theme) => ({
     marginTop:"220px",
     backgroundColor:"white",
     border:" 2px solid black",
+    marginBottom:"50px",
     marginLeft: theme.spacing(2),
     marginRight: theme.spacing(2),
     [theme.breakpoints.up(600 + theme.spacing(2) * 2)]: {

@@ -140,7 +140,7 @@ export default function Barra() {
           
             
               <Typography variant="h6" color="textWhite" component="p">
-                Bienvenido {user ? user.email : "Anónimo"}
+                Bienvenido {user ? user.email : ""}
               </Typography>
               <div className={classes.button}>
                 <Link to="/signin">

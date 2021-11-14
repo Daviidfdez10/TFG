@@ -2,11 +2,11 @@ import { Button, Divider, Typography } from "@material-ui/core";
 import React from "react";
 import { Link } from "react-router-dom";
 import { makeStyles } from "@material-ui/core/styles";
+import { padding } from "@mui/system";
 
 const  generateRandomString = (num) => {
   let result1= Math.random().toString(36).substring(num);       
-
-  return result1;
+  return result1.slice(1,-1).toLocaleUpperCase();
 }
 const useStyles = makeStyles((theme) => ({
   letra: {
@@ -14,6 +14,10 @@ const useStyles = makeStyles((theme) => ({
 
     /* backgroundColor:"#FFF5EE", */
   },
+  boton : {
+    
+    padding:"7px 20px",
+  }
 }));
 
 
@@ -26,7 +30,7 @@ const Confirmation = ({ message }) => {
   return (
     <>
       <div>
-        <Typography variant='h6'>{message} </Typography>
+        <Typography variant='h6' className={classes.letra} >{message} </Typography>
         <br />
         <Divider />
         <br />
@@ -37,7 +41,7 @@ const Confirmation = ({ message }) => {
         </Typography>
       </div>
       <br />
-      <Button component={Link} to='/' variant='outlined' type='button'>
+      <Button component={Link} to='/' variant='outlined' type='button' className={classes.boton}>
         Volver a la página principal
       </Button>
     </>

@@ -1,4 +1,4 @@
-import { Link, Typography } from "@material-ui/core";
+import { Typography } from "@material-ui/core";
 import React from "react";
 import {
 Box,
@@ -7,7 +7,10 @@ Row,
 Column,
 FooterLink,
 Heading,
+Link,
 } from "./FooterStyles";
+import Twitter from "@mui/icons-material/Twitter";
+import { Facebook, Instagram, YouTube } from "@material-ui/icons";
 
 const Footer = () => {
 return (
@@ -25,7 +28,8 @@ return (
 		<Row>
 		<Column>
 			<Heading>Sobre mi</Heading>
-            <p style={{ color: "white",
+            <p style={{ color: "white",fontSize:"19px"
+			
             
         }}>
 	Soy un estudiante que ha terminado el ciclo superior de Desarrollo de Aplicaciones Web(DAW)
@@ -44,32 +48,27 @@ return (
 			<Heading>Redes sociales
             </Heading>
 			<FooterLink href="https://www.facebook.com/" target="_blank">
-			<i className="fab fa-facebook-f">
-				<span style={{ marginLeft: "10px" }}>
-				Facebook
-				</span>
-			</i>
+				<Facebook>
+				
+			</Facebook>
 			</FooterLink>
 			<FooterLink href="https://www.instagram.com/?hl=es" target="_blank">
-			<i className="fab fa-instagram">
-				<span style={{ marginLeft: "10px" }}>
-				Instagram
-				</span>
-			</i>
+			<Instagram>
+				
+		</Instagram>
 			</FooterLink>
 			<FooterLink href="https://twitter.com/?lang=es" target="_blank">
-			<i className="fab fa-twitter">
-				<span style={{ marginLeft: "10px" }}>
-				Twitter
-				</span>
-			</i>
+				<Twitter style={{
+				
+				}}>
+				
+			</Twitter>
+		
 			</FooterLink>
 			<FooterLink href="https://www.youtube.com/" target="_blank">
-			<i className="fab fa-youtube">
-				<span style={{ marginLeft: "10px" }}>
-				Youtube
-				</span>
-			</i>
+			<YouTube>
+				
+			</YouTube>
 			</FooterLink>
 		</Column>
 		
@@ -79,25 +78,10 @@ return (
 			</Column>
 			
 		</Row>
-		
-		<Column>
+	
 			<Heading></Heading>
-			<FooterLink href="https://www.linkedin.com/in/david-fernandez-seda-76b9991a4/" target="_blank" >Copyright © by David Fernandez Seda</FooterLink>
-			</Column>
+			<Link href="https://www.linkedin.com/in/david-fernandez-seda-76b9991a4/" target="_blank">Copyright © by David Fernandez Seda</Link>
         <br />
-		
-		<Column>
-        <Typography variant='p' color='white' align='center' >
-      {"Copyright © by "}
-      <Link color='inherit' href='https://www.linkedin.com/in/david-fernandez-seda-76b9991a4/'>
-          David Fernandez Seda
-         
-
-      </Link>{" "}
-    
-      {"."}
-    </Typography>
-	</Column>
 	<Column>
     <Typography variant='p' color='white' align='center'>
         <br /> {"new Date().getFullYear()+"-"+(new Date().getMonth()+1)+"-"+ new Date().getDate()"}

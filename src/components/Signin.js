@@ -72,7 +72,7 @@ export default function SignIn() {
   };
 
   return (
-    <Container component='main' maxWidth='xs' color="secondary" className={classes.root}>
+    <Container component='main' maxWidth='xs' className={classes.root}>
       <CssBaseline />
       <div className={classes.paper}>
         <Avatar className={classes.avatar}>

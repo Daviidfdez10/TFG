@@ -130,7 +130,7 @@ export default function SignUp() {
             <Grid item xs={12}>
               <FormControlLabel
                 control={<Checkbox value='allowExtraEmails' color='secondary' required />}
-                label='Estoy de acuerdo con los derechos de contenido.'
+                label='Estoy de acuerdo con los derechos de contenido.(Opcional)'
                 
               />
             </Grid>

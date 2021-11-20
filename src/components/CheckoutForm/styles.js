@@ -10,10 +10,11 @@ export default makeStyles((theme) => ({
     backgroundColor:"white",
     border:" 2px solid black",
     marginBottom:"50px",
+    height:"auto",
     marginLeft: theme.spacing(2),
     marginRight: theme.spacing(2),
     [theme.breakpoints.up(600 + theme.spacing(2) * 2)]: {
-      width: 600,
+      width: 800,
       marginTop:"80px",
       marginLeft: "auto",
       marginRight: "auto",

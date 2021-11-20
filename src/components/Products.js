@@ -45,7 +45,8 @@ const useStyles = makeStyles((theme) => ({
         fontSize:"30px",
       },
       [theme.breakpoints.up('md')]: {
-        left:"10%",
+        left:"15%",
+       
       },
     },
    
@@ -59,8 +60,8 @@ const useStyles = makeStyles((theme) => ({
       color:"black",
       padding:"2px 5px",
       textDecoration:"none",
-      borderRadius:"5px",
-      border:"2px solid black"
+      borderRadius:"50px",
+      border:"0.25px solid black"
 
     },
    banner : {
@@ -112,7 +113,7 @@ const useStyles = makeStyles((theme) => ({
                        className={classes.image}
                        />
                    
-                      <div className={classes.centrado}>Novak djokovic <br/>Nº1 ATP <br />
+                      <div className={classes.centrado}>Novak djokovic <br/>Jugador ATP <br />
                       <a className={classes.enlace} href="https://www.atptour.com/es/rankings/singles" target="_blank">Ver ranking</a>
                       
                       </div>
@@ -123,7 +124,7 @@ const useStyles = makeStyles((theme) => ({
                 alt="description"
                  className={classes.image}
                   />
-                     <div className={classes.centrado}>Alexander Zverev<br/>Nº4 ATP <br />
+                     <div className={classes.centrado}>Alexander Zverev<br/>Jugador ATP <br />
                      <a className={classes.enlace} href="https://www.atptour.com/es/rankings/singles" target="_blank">Ver ranking</a>
 
                      </div>
@@ -132,7 +133,7 @@ const useStyles = makeStyles((theme) => ({
                 <img src={murray} 
                 alt="description"
                  className={classes.image}/>
-                <div className={classes.centrado}>Marin Cilic<br/>Nº35 ATP <br />
+                <div className={classes.centrado}>Marin Cilic<br/>Jugador ATP <br />
                 <a className={classes.enlace} href="https://www.atptour.com/es/rankings/singles" target="_blank">Ver ranking</a>
 
                 </div>

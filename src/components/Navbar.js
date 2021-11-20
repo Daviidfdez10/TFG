@@ -36,11 +36,17 @@ const useStyles = makeStyles((theme) => ({
       paddingLeft:"15px",
       
     },
+    [theme.breakpoints.up('xl')]: {
+      display:"flex",
+      flexDirection:"row",
+
+      
+    },
     
   },
   tennis:{
     color:"white",
-    height:"20px",
+    height:"30px",
     [theme.breakpoints.up('sm')]: {
       paddingLeft:"30px",
     },
@@ -60,7 +66,8 @@ const useStyles = makeStyles((theme) => ({
     marginRight: "10px",
     height:"40px",
     paddingLeft:"25px",
-    marginTop:"9px",
+    marginTop:"8px",
+
     [theme.breakpoints.up('sm')]: {
       paddingLeft:"30px",
     },
@@ -132,6 +139,7 @@ export default function Barra() {
                 Ofertas
               </Typography>
               </Link>
+              
             
             
               <div className={classes.grow}/>
@@ -140,7 +148,7 @@ export default function Barra() {
           
             
               <Typography variant="h6" color="textWhite" component="p">
-                Bienvenido {user ? user.email : ""}
+                 {user ? user.email : ""}
               </Typography>
               <div className={classes.button}>
                 <Link to="/signin">

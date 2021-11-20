@@ -46,12 +46,30 @@ grid-gap: 100px;
 export const FooterLink = styled.a`
 color: #fff;
 margin-bottom: 20px;
-font-size: 18px;
+font-size: 19px;
 text-decoration: none;
-
 &:hover {
 	color: green;
 	transition: 200ms ease-in;
+}
+@media (max-width: 1000px) {
+	font-size: 15px;
+}
+`;
+
+export const Link = styled.a`
+color: #fff;
+text-align:center;
+margin-bottom: 20px;
+padding-top:50px;
+font-size: 19px;
+text-decoration: none;
+&:hover {
+	color: green;
+	transition: 200ms ease-in;
+}
+@media (max-width: 1000px) {
+	font-size: 15px;
 }
 `;
 export const Typography = styled.p`

@@ -21,7 +21,7 @@ const useStyles = makeStyles((theme) => ({
       height:"61.9vh",
       backgroundColor:"white",
     borderRadius:"1 px solid black",
-    paddingTop:"1px",
+    paddingTop:"0px",
     [theme.breakpoints.up('sm')]: {
       paddingTop:"0px"
       
@@ -79,14 +79,12 @@ export default function SignUp() {
           <Grid container spacing={2}>
             <Grid item xs={12} sm={6}>
               <TextField
-                autoComplete='fname'
                 name='firstName'
                 variant='outlined'
                 required
                 fullWidth
                 id='firstName'
                 label='Nombre'
-                autoFocus
               />
             </Grid>
             <Grid item xs={12} sm={6}>

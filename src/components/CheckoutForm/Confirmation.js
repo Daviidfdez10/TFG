@@ -15,7 +15,7 @@ const useStyles = makeStyles((theme) => ({
     /* backgroundColor:"#FFF5EE", */
   },
   boton : {
-    
+    float:"center",
     padding:"7px 20px",
   }
 }));

@@ -2,7 +2,7 @@ const products = [
     {
       id: 1,
       name: "Extreme MP",
-      productType: "Raquetas",
+      productType: "RAQUETAS",
       price: 220,
       rating: 4,
       image:
@@ -13,7 +13,7 @@ const products = [
     {
       id: 2,
       name: "Speed black",
-      productType: "Raquetas",
+      productType: "RAQUETAS",
       price: 260,
       rating: 4,
       image:
@@ -24,7 +24,7 @@ const products = [
     {
       id: 3,
       name: "Radical MP",
-      productType: "Raquetas",
+      productType: "RAQUETAS",
       price: 270,
       rating: 3,
       image:
@@ -79,7 +79,7 @@ const products = [
       {
         id: 8,
         name: "DTB camiseta",
-        productType: "Ropa",
+        productType: "ROPA",
         price: 55,
         rating: 4,
         image:
@@ -90,7 +90,7 @@ const products = [
       {
         id: 9,
         name: "Perf t-shirt",
-        productType: "Ropa",
+        productType: "ROPA",
         price: 44,
         rating: 5,
         image:
@@ -101,7 +101,7 @@ const products = [
       {
         id: 10,
         name: "Breaker hoodie",
-        productType: "Sudaderas",
+        productType: "SUDADERAS",
         price: 58.99,
         rating: 3,
         image:

@@ -115,7 +115,7 @@ const CheckoutForm = ({ backStep, nextStep }) => {
          
           
          {loading ? (
-            <CircularProgress />
+            `Pagar ${accounting.formatMoney(getBasketTotal(basket), "€")}`
           ) : (
             `Pagar ${accounting.formatMoney(getBasketTotal(basket), "€")}`
           )}

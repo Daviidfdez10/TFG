@@ -1,9 +1,9 @@
 import { makeStyles } from "@material-ui/core/styles";
 import { Grid } from "@material-ui/core";
 import React from "react";
-import Product from "./Product";
-import products from "../product-data-sale";
-import banner from '../assets/banner.jpg';
+import Product from "../Product";
+import products from "../../data/product-data-sale";
+import banner from '../../assets/banner.jpg';
 const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,

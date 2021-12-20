@@ -6,7 +6,7 @@ import { makeStyles } from "@material-ui/core/styles";
 
 import { Link } from "react-router-dom";
 import { useStateValue } from "../../StateProvider";
-
+import { auth } from "../../firebase";
 import { actionTypes } from "../../reducer";
 
 
@@ -54,7 +54,7 @@ const AddressForm = ({ nextStep }) => {
             <AddressInput required name="firstName" label="Primer nombre"/>
             <AddressInput required name='lastName' label='Apellidos' />
             <AddressInput required name='address1' label='Direccion' />
-            <AddressInput required name='email' label='Email' value={emailRegex} />
+            <AddressInput required name='provincia' label='Provincia' />
             <AddressInput required name='city' label='Ciudad' />
             <AddressInput required name='postCode' label='C.P' />
                 </Grid>

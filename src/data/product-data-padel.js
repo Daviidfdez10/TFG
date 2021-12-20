@@ -24,7 +24,7 @@ const products = [
       {
         id: 13,
         name: "Delta hybrid",
-        productType: "Palas",
+        productType: "PALAS",
         price: 278,
         rating: 5,
         image:

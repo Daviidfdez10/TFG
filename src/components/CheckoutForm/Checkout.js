@@ -19,14 +19,6 @@ import Confirmation from "./Confirmation";
 
 const steps = ["Direccion de envio", "Detalles de pago"];
 
-
-/*  const useStyles = makeStyles((theme) => ({
-  layout:{
-    
-  }
-
-})); 
- */
 const Checkout = () => {
   const classes= useStyles();
     const [activeStep, setActivestep] = useState(0);

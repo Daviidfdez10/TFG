@@ -1,45 +1,45 @@
 import { makeStyles } from "@material-ui/core/styles";
 import { Grid } from "@material-ui/core";
 import React from "react";
-import Product from "./Product";
-import products from "../product-data-tennis";
-import banner from '../assets/banner.jpg';
-
+import Product from "../Product";
+import products from "../../data/product-data-padel";
+import banner from '../../assets/banner.jpg'
 const useStyles = makeStyles((theme) => ({
-    root: {
-      flexGrow: 1,
-      padding:theme.spacing(3),
-      paddingTop:"200px",
-      [theme.breakpoints.up('sm')]: {
-        paddingTop:"10px"
-        
-      },
-    },
-    banner : {
-      maxWidth:"100%", 
-    
-     [theme.breakpoints.up('sm')]: {
-      maxWidth:"100%",
+  root: {
+    flexGrow: 1,
+    padding:theme.spacing(3),
+    paddingTop:"200px",
+    [theme.breakpoints.up('sm')]: {
+      paddingTop:"10px"
       
-    }
-  },
-  xd : {
-    position:"absolute",
-    top:"77%",
-    left:"45%",
-    transform: "translate(-50%, -50%)",
-    fontSize:"10px",
-    color:"white",
-    fontWeight:"bold",
-       [theme.breakpoints.up('sm')]: {
-      paddingTop:"10px",
-      fontSize:"30px",
     },
-   }
-   
-  }));
+  },
+  banner : {
+    maxWidth:"100%", 
+ 
+   [theme.breakpoints.up('sm')]: {
+    maxWidth:"100%",
 
-  export default function ProductsTennis(){
+  }
+},
+
+xd : {
+  position:"absolute",
+  top:"70%",
+  left:"45%",
+  transform: "translate(-50%, -50%)",
+  fontSize:"10px",
+  color:"white",
+  fontWeight:"bold",
+     [theme.breakpoints.up('sm')]: {
+    paddingTop:"10px",
+    fontSize:"30px",
+  },
+ }
+ 
+}));
+
+  export default function ProductsPadel(){
       const classes= useStyles();
 
 
@@ -50,10 +50,12 @@ const useStyles = makeStyles((theme) => ({
              style={{ color: "black",
              textAlign: "center",
              fontSize:50,
-             marginTop: "-10px" }}
+             marginTop: "-20px"
+            
+            }}
             
              
-            >Tenis </h1>
+            >Padel </h1>
               <Grid  container spacing={2}>
                 {
                   
@@ -78,7 +80,7 @@ const useStyles = makeStyles((theme) => ({
                     alt="description"
                        className={classes.banner}
                        />
-                  
+               
                         
 </a>
 </div>

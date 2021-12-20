@@ -1,13 +1,13 @@
 import { makeStyles } from "@material-ui/core/styles";
 import { Grid } from "@material-ui/core";
 import React from "react";
-import Product from "./Product";
-import products from "../product-data";
+import Product from "../Product";
+import products from "../../data/product-data";
 import { textAlign } from "@mui/system";
-import femenina from '../assets/femenina.jpg'
-import murray from '../assets/murray.jpg'
-import banner from '../assets/banner.jpg'
-import djokovic from '../assets/djokovic.jpg'
+import femenina from '../../assets/femenina.jpg'
+import murray from '../../assets/murray.jpg'
+import banner from '../../assets/banner.jpg'
+import djokovic from '../../assets/djokovic.jpg'
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from 'react-responsive-carousel';
 
